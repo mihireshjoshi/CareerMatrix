@@ -1,33 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&display=swap"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap" rel="stylesheet"> 
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-    crossorigin="anonymous"></script>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Manrope">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Manrope' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
-        body {
-            background-size: 100% 70%;
+        body{
+            font-family: 'Poppins', sans-serif;
+            background-image: url(/image1.png);
             background-repeat: no-repeat;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
+            background-size: 100% 55%;
+            height: 100vh; 
+        
         }
         #main{
             font-size: 70px;
@@ -37,6 +27,14 @@
             width: 700px;
             font-weight: normal;
         }
+        footer {
+            margin-top: 15vh; /* Adjust this value to match the height of your image */
+            /* Other styles for your footer */
+        }
+        
+
+
+
         #gradient1{
             background: linear-gradient(91deg, #FA00FF 2.21%, #FF004D 34.66%);
             background-clip: text;
@@ -56,6 +54,30 @@
             font-weight: bold;
             line-height: normal;
         }
+        .row{
+            margin-top: 8%;
+            margin-left: 7%;
+        }
+        #s1{
+            color: #49FF9D;
+            text-shadow: 0px 0px 4px #49FF9D;
+            font-family: Poppins;
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+        #cont {
+            font-family: 'Poppins', sans-serif;
+            color: white;
+            font-size: 42px;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Align items (button and text) horizontally */
+            padding-top: 3%;
+            padding-right: 8%;
+                      
+        }
         #butt{
             border-radius: 10px;
             color: white;
@@ -70,58 +92,98 @@
             font-weight: 500px;
             width: 200px;
         }
-
-        .col-8{
-            padding-left: 10%;
-            padding-bottom: 10%;
-        }
-        .col-4 {
-            font-family: 'Poppins', sans-serif;
-            color: white;
-            font-size: 42px;
+        .container{
             display: flex;
-            flex-direction: column;
-            align-items: center; /* Align items (button and text) horizontally */
-            padding-top: 3%;
-            padding-right: 8%;
-                      
+            justify-content: space-evenly;
+        }
+        #fea{
+            list-style-type: none;
+            color: black;
+            font-size: 28px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
         }
         
-        #s1{
-            color: #49FF9D;
-            text-shadow: 0px 0px 4px #49FF9D;
-            font-family: Poppins;
-            font-size: 48px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
-
+        /* Style for heading */
+        .list-heading {
+            margin-top: 0; /* Remove default margin */
+            font-size: 1.2em; /* Adjust font size as needed */
         }
-    </style>
-</head>
-<body background="image1.png">
-    <header>
 
-    </header>
-    <section>                                                                      
+        /* Style for list items */
+        li {
+            margin-left: 0; /* Remove default margin */
+            padding-left: 0; /* Remove default padding */
+        }
+        #heading{
+            font-weight: bold;
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+    <section>
         <div class="row">
-            <div class="col-8">
+            <div class="col-6">
                 <p id="main"> 
                     <span id="gradient1">Confused</span> 
                      about your 
                     <span id="gradient2">future?</span> 
                 </p>
             </div>
-            <div class="col-4">
+
+            <div class="col-6" id="cont">
                 <p id="s1">Check this out!</p>
                 <a href="Main.html"> 
                     <button id="butt">Get Started</button>
                 </a>
-               
+
             </div>
-        </div> 
+        </div>
     </section>
+
     <footer>
+        <div class="container">
+            <div class="item item-1">
+                <h2 id="heading">Features</h2>
+                <ul id="fea">
+                    <li>Resume/CV Generation</li>
+                    <li>Skill Enhancer</li>
+                    <li>Training Recommendation</li>
+                </ul>
+
+            </div>
+            <div class="item item-2">
+                <h2 id="heading">Tech Stack</h2>
+                <ul id="fea">
+                    <li>Gemini LLM</li>
+                    <li>Flask API</li>
+                    <li>Figma</li>
+                </ul>
+
+            </div>
+            <div class="item item-3">
+                <h2 id="heading">Team</h2>
+                <ul id="fea">
+                    <li>Mihiresh Joshi</li>
+                    <li>Parth Athalye</li>
+                    <li>Soham Kulkarni</li>
+                    <li>Ojas Suratkar</li>
+                </ul>
+
+                
+            </div>
+          </div>
+
     </footer>
+
+    
 </body>
 </html>
