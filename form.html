@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&display=swap" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Manrope">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+        }
+       
+
+                    /* CSS styles for the pill container */
+  .pill-container {
+   
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 200px; /* Adjust the maximum width as needed */
+    margin: auto; /* Center the container */
+  }
+
+  .pill-container .half {
+    flex: 1;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .pill-container .half:first-child {
+    background-color: #ccc; /* Blue background for the first half */
+  }
+
+  .pill-container .half:last-child {
+    background: linear-gradient(180deg, #9A00F8 0%, #0081F8 100%);
+  }
+
+  .pill-container button {
+    border: none;
+    border-radius: 10px;
+    background-color: transparent; /* Make the button background transparent */
+    color: white; /* Set the button text color */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  #pdf{
+    color: grey;
+  }
+  section{
+    margin-top: 2%;
+    
+  }
+
+
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    
+}
+
+.input-label {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.col-4{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#longinp{
+  margin-left: 8.5%;
+  margin-right: 8.5%;
+}
+
+#butt2 {
+  border-radius: 8px;
+  background: radial-gradient(410.3% 156.41% at 11.65% -17.93%, #A449FF 0%, #FF4980 99.99%);
+  box-shadow: 0px 0px 20px 0px #FF4980;
+  margin-top: 1%;
+  margin-left: 9.3%;
+  color: white;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  width: auto;
+  padding: 10px 20px;
+}
+
+
+
+
+
+    </style>
+
+
+
+</head>
+<body>
+    <header>
+
+    </header>
+
+    <section>
+        <div class="pill-container">
+            <div class="half">
+                <a href="Main.html">
+                  <button id="pdf">PDF</button>
+                </a>
+              </div>
+              <div class="half">
+                <a href="form.html">
+                  <button id="form">Form</button>
+                </a>
+                
+              </div>
+        </div>
+
+      <div class="row">
+        <div class="col-4">
+        <div class="input-container">
+            <label class="input-label" for="inputField">Name</label>
+            <input type="text" id="inputField" class="input-field" placeholder="Enter your name">
+        </div>
+        </div>
+        <div class="col-4">
+          <div class="input-container">
+              <label class="input-label" for="inputField">Email</label>
+              <input type="text" id="inputField" class="input-field" placeholder="Enter your Email">
+          </div>
+          </div>
+          <div class="col-4">
+            <div class="input-container">
+                <label class="input-label" for="inputField">Mobile Number</label>
+                <input type="text" id="inputField" class="input-field" placeholder="Enter your Mobile Number">
+            </div>
+            </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-4">
+        <div class="input-container">
+            <label class="input-label" for="inputField">Age:</label>
+            <input type="text" id="inputField" class="input-field" placeholder="Enter your Age">
+        </div>
+        </div>
+        <div class="col-4">
+          <div class="input-container">
+              <label class="input-label" for="inputField">Tech-Stack</label>
+              <input type="text" id="inputField" class="input-field" placeholder="Enter the technologies you know">
+        </div>
+        </div>
+         
+      </div>
+
+      <div class="row" id="longinp">
+        <div class="input-container">
+            <label class="input-label" for="inputField">Address</label>
+            <input type="text" id="inputField" class="input-field" placeholder="Enter your Address">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-4">
+        <div class="input-container">
+            <label class="input-label" for="inputField">Qualifications</label>
+            <input type="text" id="inputField" class="input-field" placeholder="Enter your Qualifications">
+        </div>
+        </div>
+        <div class="col-4">
+          <div class="input-container">
+              <label class="input-label" for="inputField">Work-Experience</label>
+              <input type="text" id="inputField" class="input-field" placeholder="Enter your Workexperience">
+          </div>
+          </div>
+          <div class="col-4">
+            <div class="input-container">
+                <label class="input-label" for="inputField">Project</label>
+                <input type="text" id="inputField" class="input-field" placeholder="Enter your projects">
+            </div>
+            </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-4">
+        <div class="input-container">
+            <label class="input-label" for="inputField">Skills</label>
+            <input type="text" id="inputField" class="input-field" placeholder="Your Skills">
+        </div>
+        </div>
+        <div class="col-4">
+          <div class="input-container">
+              <label class="input-label" for="inputField">Achievements</label>
+              <input type="text" id="inputField" class="input-field" placeholder="Mention your Achievements">
+        </div>
+        </div>
+         
+      </div>
+
+
+      <div class="row" id="longinp">
+        <div class="input-container">
+            <label class="input-label" for="inputField">Co-Curriculars</label>
+            <input type="text" id="inputField" class="input-field" placeholder="What else do you like">
+        </div>
+      </div>
+
+
+      <div class="row" id="longinp">
+        <div class="input-container">
+            <label class="input-label" for="inputField">Goals</label>
+            <input type="text" id="inputField" class="input-field" placeholder="What are your goals">
+        </div>
+      </div>
+
+
+    <div class="row">
+      <div class="col">
+        <button id="butt2">Suggest</button>
+      </div>
+        
+    </div>
+
+  
+
+    </section>
+
+    <footer>
+
+    </footer>
+</body>
+</html>
