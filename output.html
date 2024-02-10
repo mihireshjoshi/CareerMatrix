@@ -12,6 +12,7 @@
     <style>
         #pdf_display{
             height: 400px;
+            width: 600px;
             margin-bottom: 4%;
             border: 2px solid black;
         }
@@ -22,24 +23,77 @@
             font-size: 76px;
             font-weight: 900;
             font-family: Poppins;
-            color: #007451;
+            background: linear-gradient(263deg, #BFAFFF 11.09%, #004d57 98.77%);            
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-top: 3%;
+        }
+        .headingc{
+            font-size: 54px;
+            font-weight: 900;
+            font-family: Poppins;
+            background: linear-gradient(263deg, #BFAFFF 11.09%, #004d57 98.77%);            
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-top: 3%;
+            
+        }
+        #headingb{
+            font-size: 32px;
+            font-weight: 900;
+            font-family: Poppins;
+            background: linear-gradient(263deg, #BFAFFF 11.09%, #004d57 98.77%);            
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-top: 3%;
         }
         #res_box{
             border-radius: 20px;
-            border: 1px solid #000;
-            background: #FFF;
+            /*border: 1px solid #000;*/
+            background: linear-gradient(263deg, #BFAFFF 11.09%, #B1F6FF 98.77%);
             box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.25);
             padding: 2%;
             margin: 0.6%;
             height: fit-content;
+            width: fit-content;
         }
-        #sugg_a,#sugg_b{
+        #sugg_a,#sugg_b,#sugg_links{
             font-size: 18px;
             font-family: Poppins;
             margin-top: 1%;
         }
+        #sugg_links{
+            background: linear-gradient(263deg, #E3FFF6 11.08%, #BFF4FB 89.93%);
+            border-radius: 12px;
+            padding: 2%;
+            width: max-content;
+        }
         #links{
-            
+            font-size: 18px;
+            font-family: Poppins;
+            color: blue;
+        }
+        #res_box p{
+            color: #2C2C2C;
+            font-size: 22px;
+        }
+        button{
+            border: 0px;
+            background: linear-gradient(300deg, #6d5cb1 11.09%, #004d57 98.77%);
+            font-size: 28px;
+            padding: 10px 20px;
+            border-radius: 12px;
+            color: white;
+            font-family: Poppins;
+            margin-bottom: 3%;
+        }
+        .line{
+            background: linear-gradient(90deg, #0070AE 5.74%, #9A00F8 94.26%);
+            height: 1px;
+            margin-top: 3%;
         }
     </style>
 </head>
@@ -48,12 +102,12 @@
         <div class="container">
             
             <div class="row">
-                <div class="col-7">
+                <div class="col">
                     <div class="row">
                         <p class="heading">We think that<br>you should....</p>
                     </div>
                 </div>
-                <div class="col-4" id="res_box">
+                <div class="col" id="res_box">
                     <p>Name</p>
                     <div class="row">
                         <div class="col">
@@ -81,15 +135,20 @@
                     </div>
                 </div>
             </div>
+            <div class="line"></div>
             <div class="row">
-                <p id="sugg_a">Suggestion 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                <p id="links">Udemy Python course link: https://blah.com<br>Coursera DS course link: https://blah2.com</p>
+                <p id="headingb">Suggestion 1:</p>
+                <p id="sugg_a">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                <p id="sugg_links">Udemy Python course link: <span id="links"><a href="#" target="_blank">https://blah.com</a></span><br>Coursera DS course link: <span id="links"><a href="#" target="_blank">https://blah.com</a></span></p>
             </div>
+            <div class="line"></div>
             <div class="row">
-                <p id="sugg_b">Suggestion 2: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                <p id="headingb">Suggestion 2:</p>
+                <p id="sugg_b">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
             </div>
+            <div class="line"></div>
             <div class="row">
-                <p class="headimg">New CVs</p>
+                <p class="heading">New CVs</p>
             </div>
             <div class="row">
                 <div class="col">
@@ -98,12 +157,10 @@
                 <div class="col">
                     <embed src="file.pdf" type="application/pdf" id="pdf_display">
                 </div>
-                <div class="col">
-                    <embed src="file.pdf" type="application/pdf" id="pdf_display">
-                </div>
             </div>
+            <div class="line"></div>
             <div class="row">
-                <p class="headimg">New CVs</p>
+                <p class="headingc">We hope it was helpful....<br>Do come again</p>
             </div>
             <button>Try it</button>
         </div>
